@@ -62,3 +62,41 @@ function play(){
                 }
             }
         });
+        requestAnimationFrame(move);
+    }
+    requestAnimationFrame(move);
+
+    let flying_dy = 0;
+    function apply_gravity(){
+        if(game_state != 'Play') return;
+        flying_dy = flying_dy + grativy;
+        document.addEventListener('keydown', (e) => {
+            if(e.key == 'ArrowUp' || e.key == ' '){
+                img.src = 'images/flying.png';
+                flying_dy = -7.6;
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            if(e.key == 'ArrowUp' || e.key == ' '){
+                img.src = 'images/flying.png';
+            }
+        });
+
+        if(flying_props.top <= 0 || flying_props.bottom >= background.bottom){
+            game_state = 'End';
+            message.style.left = '28vw';
+            window.location.reload();
+            message.classList.remove('messageStyle');
+            return;
+        }
+        flying.style.top = flying_props.top + flying_dy + 'px';
+        flying_props = flying.getBoundingClientRect();
+        requestAnimationFrame(apply_gravity);
+    }
+    requestAnimationFrame(apply_gravity);
+
+    let pipe_seperation = 0;
+
+    let pipe_gap = 35;
+    
