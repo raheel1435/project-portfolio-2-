@@ -55,3 +55,43 @@ p span {
 	color: gold;
 	font-weight: bold;
 }
+
+
+/* For medium screens sizes from 1200px wide and down */
+@media only screen and (max-width: 1200px) {
+    .message{
+		font-size: 50px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.flying{
+		width: 120px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
+
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px){
+
+    .message{
+		font-size: 25px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.flying{
+		width: 100px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
