@@ -33,3 +33,32 @@ document.addEventListener('keydown', (e) => {
         play();
     }
 });
+
+function play(){
+    function move(){
+        if(game_state != 'Play') return;
+
+        let pipe_sprite = document.querySelectorAll('.pipe_sprite');
+        pipe_sprite.forEach((element) => {
+            let pipe_sprite_props = element.getBoundingClientRect();
+            flying_props = flying.getBoundingClientRect();
+
+            if(pipe_sprite_props.right <= 0){
+                element.remove();
+            }else{
+                if(flying_props.left < pipe_sprite_props.left + pipe_sprite_props.width && flying_props.left + flying_props.width > pipe_sprite_props.left && flying_props.top < pipe_sprite_props.top + pipe_sprite_props.height && flying_props.top + flying_props.height > pipe_sprite_props.top){
+                    game_state = 'End';
+                    message.innerHTML = 'Game Over'.fontcolor('red') + '<br>Press Enter To Restart';
+                    message.classList.add('messageStyle');
+                    img.style.display = 'none';
+                    
+                    return;
+                }else{
+                    if(pipe_sprite_props.right < flying_props.left && pipe_sprite_props.right + move_speed >= flying_props.left && element.increase_score == '1'){
+                        score_val.innerHTML =+ score_val.innerHTML + 1;
+                        sound_point.play();
+                    }
+                    element.style.left = pipe_sprite_props.left - move_speed + 'px';
+                }
+            }
+        });
