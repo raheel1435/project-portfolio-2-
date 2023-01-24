@@ -55,6 +55,15 @@ p span {
 	color: gold;
 	font-weight: bold;
 }
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background:radial-gradient(lightgreen 50%, green);
+	border: 5px solid black;
+}
 
 
 /* For medium screens sizes from 1200px wide and down */
