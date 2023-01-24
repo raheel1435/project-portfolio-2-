@@ -64,7 +64,63 @@ p span {
 	background:radial-gradient(lightgreen 50%, green);
 	border: 5px solid black;
 }
-
+.slider-cont{
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.slider {
+    position: relative;
+    width: 300px;
+    height: 8px;
+}
+.slider input[type="range"]{
+    position: absolute;
+    left: -2px;
+    top: 0;
+    width: 304px;
+    height: 8px;
+    -webkit-appearance: none;
+    background: transparent;
+    z-index: 99;
+}
+.slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid rgb(9, 205, 240);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #fff;
+    border-radius: 50%;
+}
+.slider input::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+.slider progress {
+    width: 300px;
+    height: 8px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.slider progress::-webkit-progress-bar {
+    background: #f0f0f0;
+}
+.slider progress::-webkit-progress-value {
+    background: rgb(9, 205, 240);
+}
+.sliderVlaue {
+    font-family: "Google Sans Regular";
+    width: 28px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
 
 /* For medium screens sizes from 1200px wide and down */
 @media only screen and (max-width: 1200px) {
