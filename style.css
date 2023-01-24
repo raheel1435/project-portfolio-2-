@@ -13,3 +13,11 @@ p span {
     background: url(´images/background.gif´) no-repeat center center fixed;
     background-size: cover;
 }
+.flying {
+    height: 100px;
+	width: 130px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
