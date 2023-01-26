@@ -108,7 +108,7 @@ https://github.com/raheel1435/project-portfolio-2-/settings/pages
 <img src="readme/devicetesting.jpg">
 
 <h2>Known Bugs</h2>
-<p>there is an error which is based on main google font. thing it is asking are already on place. but still error is there. and still trying to figure out to solve it.</p>
+<p>There are few bugs in css and javascript. and working on them.</p>
 
 <img src="readme/html checker.jpg">
 
