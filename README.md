@@ -71,3 +71,54 @@
 <li>Under Source, select the branch to master, then click save.</li>
 <li>Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.</li>
 </ol>
+
+<img src="readme/deploy.jpg" all="all steps to deploy your repository">
+<p>The live link to the Github repository can be found here
+https://raheel1435.github.io/project-portfolio-2-/
+https://github.com/raheel1435/project-portfolio-2-/settings/pages
+</p>
+
+<h2>To fork the repository on GitHub</h2>
+<p>A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;</p>
+
+<ol>
+<li>Log in to GitHub and locate the repository.</li>
+<li>On the right hand side of the page inline with the repository name is a button called 'Fork', click on the button to create a copy of the original repository in your GitHub Account.</li>
+</ol>
+
+<img src="readme/fork.jpg">
+
+
+<h2>To create a local clone of this project</h2>
+<p>The method from cloning a project from GitHub is below:</p>
+<ol>
+<li>Under the repository’s name, click on the code tab.</li>
+<li>In the Clone with HTTPS section, click on the clipboard icon to copy the given URL.
+<img src="readme/clone.jpg"></li>
+<li>In your IDE of choice, open Git Bash.</li>
+<li>Change the current working directory to the location where you want the cloned directory to be made.</li>
+<li>Type git clone, and then paste the URL copied from GitHub.</li>
+<li>Press enter and the local clone will be created.</li>
+</ol>
+
+<h2>Responsive Test</h2>
+<ul>
+<li>The responsive design tests were carried out manually with Google Chrome DevTools and Responsive Design Checker.</li>
+</ul>
+<img src="readme/devicetesting.jpg">
+
+<h2>Known Bugs</h2>
+<p>there is an error which is based on main google font. thing it is asking are already on place. but still error is there. and still trying to figure out to solve it.</p>
+
+<img src="readme/html checker.jpg">
+
+<img src="readme/css checker.jpg">
+
+<img src="readme/js checker.jpg">
+
+
+<h1>Acknowledgements</h1>
+
+<p>The site was completed as a Portfolio 2 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the Code Institute. As such I would like to thank my mentor Precious Ijege, the Slack community, and all at the Code Institute for their help and support. 
+
+Raheel Shan 2023.</p>
