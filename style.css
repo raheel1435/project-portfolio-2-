@@ -36,7 +36,7 @@ button{
 	
 	text-align: center;
 	cursor: pointer;
-	background: linear-gradient(to right bottom,#273c75,#079992);
+	background: linear-gradient(to right bottom,black,white);
 	color: #fff;
 	border-radius: 5px;
 	border:0px;
@@ -80,7 +80,7 @@ button{
 .messageStyle{
 	background: rgb(215, 66, 66);
 	padding: 30px;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	box-shadow: black 0px 3px 8px;
 	border-radius: 5%;
 }
 .score {
