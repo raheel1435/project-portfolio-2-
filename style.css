@@ -18,7 +18,7 @@ em{
 	position: fixed;
 	
 	height: 10vh;
-	
+	z-index: 999;
 	
 	color: white;
 	

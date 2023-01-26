@@ -1,8 +1,8 @@
 let move_speed = 3, grativy = 0.5;
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
-let sound_point = new Audio('sounds effect/point.mp3');
-let sound_die = new Audio('sounds effect/die.mp3');
+let sound_point = new Audio('sounds_effect/point.mp3');
+let sound_die = new Audio('sounds_effect/die.mp3');
 
 // setting sound controller
 
@@ -92,13 +92,13 @@ function play(){
         bird_dy = bird_dy + grativy;
         document.addEventListener('keydown', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = 'images/Bird-2.png';
+                img.src = 'images/bird-2.png';
                 bird_dy = -7.6;
             }
         });
         document.addEventListener('keyup', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = 'images/Bird.png';
+                img.src = 'images/bird.png';
             }
         });
         
