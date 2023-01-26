@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet"> 
-    <title>Superman at War</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <link rel="icon" type="image/png/gif" href="images"/>
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="background"></div>
-    <img src="images/flying.png" alt="flying" class="flying" id="flying-1">
+    <img src="images/Bird.png" alt="bird-img" class="bird" id="bird-1">
     <div class="message">
-        Enter To Start Game <p><span>&uarr;</span></i> UpArrow to Control</p>
+        Enter To Start Game <p><span>&uarr;</span> <em>UpArrow</em> to Control</p>
     </div>
     <div class="score">
-        <span class="score-title"></span>
-        <span class="score-val"></span>
+        <span class="score_title"></span>
+        <span class="score_val"></span>
     </div>
+    <div id="sound">
+        <audio id="audio">
+            <source src="sounds effect/point.mp3" type="audio/mpeg">
+        </audio>
     
-    <div class="slider-cont">
-        <div class="slider">
-            <input type="range" min="0" max="100" value="50">
-            <progress min="0" max="100" value="50"></progress>
-        </div>
-        <div class="sliderValue">50</div>
+        <button id="playPauseBTN" onclick="playPause()">Play ►</button>
     </div>
-    <script src="script.js" defer></script>
 
 </body>
 </html>
